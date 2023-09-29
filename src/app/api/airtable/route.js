@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import Airtable from 'airtable';
-import getAirtableData from 'src/app/api/getAirtableData.js';
+
 
 const fetchAirtableData = async () => {
     const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(process.env.AIRTABLE_BASE_ID);
