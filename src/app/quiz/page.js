@@ -81,10 +81,12 @@ const HomePage = () => {
        <div style={{ textAlign: 'center' }}>
         <button onClick={handleSubmit}>Submit</button>
       </div>
-        <div>
+          <div>
         <h3>Based on your selections, you are most like:</h3>
-          {generatedText }
-        </div>
+        {generatedText.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+      </div>
     </div>
   )};
 
